@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram Iyaz - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            AKRAM IYAZ
+        </div>
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#membership">Membership</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About Me</a>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="typed-hero-text">Hi, I'm <span id="typed-name"></span><span class="cursor">|</span></h1>
+                <p class="job-title">Software Developer</p>
+
+                <div class="buttons">
+                    <a href="Akram_Iyaz_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fa-solid fa-eye"></i> View CV
+                    </a>
+
+                    <a href="Akram_Iyaz_CV.pdf" download="Akram_Iyaz_Software_Developer_CV.pdf"
+                        class="btn btn-secondary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/akrambhat/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/akrambhat"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:bhatakram07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <section id="education" class="content-section bg-alternate">
+            <h2 class="section-heading">Education</h2>
+            <div class="section-content edu-cards-container">
+
+                <div class="edu-card" onclick="toggleCard(this)">
+                    <div class="edu-card-header">
+                        <h3>Bachelor of Engineering – Information Science and Engineering</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="edu-card-body">
+                        <div class="edu-details">
+                            <span><i class="fa-solid fa-building-columns"></i> Cambridge Institute of Technology</span>
+                            <span><i class="fa-regular fa-calendar"></i> <span class="highlight">2022 –
+                                    2026</span></span>
+                            <span><i class="fa-solid fa-graduation-cap"></i> <span class="highlight">CGPA:
+                                    7.5</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card" onclick="toggleCard(this)">
+                    <div class="edu-card-header">
+                        <h3>Diploma – Information Technology</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="edu-card-body">
+                        <div class="edu-details">
+                            <span><i class="fa-solid fa-building-columns"></i> Kashmir Government Polytechnic</span>
+                            <span><i class="fa-regular fa-calendar"></i> <span class="highlight">2020 –
+                                    2023</span></span>
+                            <span><i class="fa-solid fa-graduation-cap"></i> <span
+                                    class="highlight">78.88%</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="content-section">
+            <h2 class="section-heading">Experience</h2>
+            <div class="section-content exp-cards-container">
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3>Android Developer Intern</h3>
+                    </div>
+                    <div class="exp-details">
+                        <span><i class="fa-solid fa-building"></i> MindMatrix</span>
+                        <span><i class="fa-regular fa-calendar"></i> <span class="highlight">Feb 2026 –
+                                Present</span></span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3>IT Cloud and Infrastructure Intern</h3>
+                    </div>
+                    <div class="exp-details">
+                        <span><i class="fa-solid fa-building"></i> Sustainext, Bangalore</span>
+                        <span><i class="fa-solid fa-laptop-code"></i> Technology Department</span>
+                        <span><i class="fa-regular fa-calendar"></i> <span class="highlight">Mar 16, 2026 – Jul 15,
+                                2026</span></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="content-section bg-alternate">
+            <h2 class="section-heading">Projects</h2>
+            <div class="section-content exp-cards-container">
+
+                <div class="project-grow-card">
+                    <div class="project-top">
+                        <h3>Library Management System</h3>
+                        <div class="project-role">Backend Developer (Academic)</div>
+                    </div>
+                    <div class="project-bottom">
+                        <ul class="project-list">
+                            <li>Developed a full-featured library management system for college use.</li>
+                            <li>Implemented book issue/return, inventory tracking, and user management.</li>
+                            <li>Designed backend logic and database integration using Java & MySQL.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span><i class="fa-brands fa-java"></i> Java</span>
+                            <span><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-grow-card">
+                    <div class="project-top">
+                        <h3>Random MAC Spoofer Tool</h3>
+                        <div class="project-role">Python Developer (Personal)</div>
+                    </div>
+                    <div class="project-bottom">
+                        <ul class="project-list">
+                            <li>Built a Python-based tool to randomize MAC addresses.</li>
+                            <li>Ensured compatibility with Linux-based systems.</li>
+                            <li>Focused on networking concepts and system-level programming.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span><i class="fa-brands fa-python"></i> Python</span>
+                            <span><i class="fa-brands fa-linux"></i> Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="membership" class="content-section">
+            <h2 class="section-heading">Memberships</h2>
+            <div class="section-content exp-cards-container">
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3>Algorand Blockchain Club</h3>
+                        <div class="project-role" style="color: var(--accent-color);">Core Team Member</div>
+                    </div>
+                    <div class="exp-details">
+                        <span><i class="fa-solid fa-building-columns"></i> Cambridge Institute of Technology</span>
+                        <span><i class="fa-solid fa-users"></i> Active Contributor</span>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3>IAENG</h3>
+                        <div class="project-role">Member of the following societies:</div>
+                    </div>
+                    <div class="exp-details" style="border-top: none; padding-top: 0;">
+                        <div class="sub-cards-container">
+                            <div class="sub-card">
+                                <i class="fa-solid fa-brain"></i> Artificial Intelligence
+                            </div>
+                            <div class="sub-card">
+                                <i class="fa-solid fa-globe"></i> Internet Computing and Web Services
+                            </div>
+                            <div class="sub-card">
+                                <i class="fa-solid fa-network-wired"></i> Information System Engineering
+                            </div>
+                            <div class="sub-card">
+                                <i class="fa-solid fa-microchip"></i> Scientific Computing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="content-section bg-alternate">
+            <h2 class="section-heading">Skills</h2>
+            <div class="section-content skills-container">
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fa-solid fa-code"></i> Core & Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-java"></i> Java</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-react"></i> React, HTML & CSS</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fa-solid fa-server"></i> Backend & Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-leaf"></i> Spring Boot & Servlets</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-database"></i> MySQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-envira"></i> MongoDB</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-brands fa-linux"></i> Linux OS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-chart-pie"></i> Power BI & Tableau</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span><i class="fa-solid fa-wrench"></i> Maven, Apache, IDEs</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bg">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="section-heading">About Me</h2>
+            <div class="section-content text-center">
+                <p>Aspiring Software Developer with hands-on experience in building RESTful APIs and database-driven
+                    applications using Spring Boot and MySQL. Strong foundation in data structures, algorithms, and
+                    object-oriented programming. Passionate about developing scalable backend systems, problem-solving,
+                    and exploring networking and machine learning concepts.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2026 Akram Iyaz. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="https://github.com/akrambhat"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/akrambhat/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:bhatakram07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
