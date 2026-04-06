@@ -33,7 +33,7 @@ const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const icon = themeToggle.querySelector('i');
 
-// Check for saved user preference on load
+// Checks for saved user preference on load
 window.onload = () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -42,7 +42,7 @@ window.onload = () => {
     }
 };
 
-// Listen for clicks on the theme button
+// Listens for clicks on the theme button
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
@@ -53,4 +53,27 @@ themeToggle.addEventListener('click', () => {
         icon.classList.replace('fa-sun', 'fa-moon');
         localStorage.setItem('theme', 'light');
     }
+});
+
+// --- Hamburger Menu Logic ---
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('nav-menu');
+const hamburgerIcon = hamburgerBtn.querySelector('i');
+const navLinks = navMenu.querySelectorAll('a');
+
+hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    if (navMenu.classList.contains('active')) {
+        hamburgerIcon.classList.replace('fa-bars', 'fa-xmark');
+    } else {
+        hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
+    }
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburgerIcon.classList.replace('fa-xmark', 'fa-bars');
+    });
 });
