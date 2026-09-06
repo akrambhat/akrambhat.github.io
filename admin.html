@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Content Editor</title>
+    <!-- Use Inter and Space Mono as specified/existing -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Admin specific styles */
+        body { padding: 2rem; }
+        .admin-container { max-width: 900px; margin: 0 auto; background: #fff; border: 1px solid var(--border); padding: 2rem; box-shadow: var(--shadow); }
+        .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+        .admin-title { font-size: 2rem; font-weight: 600; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent); }
+        .form-control { width: 100%; padding: 0.8rem; border: 1px solid var(--border); font-family: var(--font-sans); font-size: 1rem; }
+        textarea.form-control { min-height: 120px; resize: vertical; }
+        .btn-group { display: flex; gap: 1rem; margin-top: 1rem; }
+        .btn-danger { background: #d90429; color: #fff; border-color: #d90429; }
+        .btn-danger:hover { background: #ef233c; border-color: #ef233c; }
+        .section-selector { display: flex; gap: 1rem; margin-bottom: 2rem; align-items: center; }
+        .section-selector select { padding: 0.8rem; border: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.9rem; flex-grow: 1; }
+        .array-item { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; background: #fafafa; position: relative; }
+        .array-item-remove { position: absolute; top: 0.5rem; right: 0.5rem; background: none; border: none; font-size: 1.5rem; color: #d90429; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1 class="admin-title">Content Editor</h1>
+            <button id="export-btn" class="btn btn-secondary">EXPORT PORTFOLIO.JS</button>
+        </div>
+
+        <div class="section-selector">
+            <label for="section-select">Select Section:</label>
+            <select id="section-select">
+                <option value="">-- Choose a section to edit --</option>
+                <option value="personal">Personal Information</option>
+                <option value="hero">Hero</option>
+                <option value="profile">Professional Profile</option>
+                <option value="education">Education</option>
+                <option value="experience">Experience</option>
+                <option value="projects">Projects</option>
+                <option value="skills">Technical Skills</option>
+                <option value="certifications">Certifications</option>
+                <option value="achievements">Achievements</option>
+                <option value="coursework">Coursework</option>
+            </select>
+        </div>
+
+        <div id="editor-form-container">
+            <!-- Form fields injected here by admin.js -->
+        </div>
+        
+        <div class="btn-group" id="editor-actions" style="display: none;">
+            <button id="save-section-btn" class="btn btn-primary">SAVE SECTION CHANGES</button>
+        </div>
+    </div>
+
+    <!-- Load data first, then logic -->
+    <script src="data/portfolio.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
